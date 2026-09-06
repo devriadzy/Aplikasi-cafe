@@ -48,11 +48,13 @@ or simply taking a little time for yourself.
 
     <div class="section-title">
 
-        <h2>Everything You Need</h2>
+        <span class="section-label">OUR EXPERIENCE</span>
+
+        <h2>More Than Just Coffee</h2>
 
         <p>
-            Fitur sederhana untuk membangun aplikasi
-            yang powerful.
+            Good coffee, good food, and good moments —
+            everything you need to make your day a little better.
         </p>
 
     </div>
@@ -63,15 +65,15 @@ or simply taking a little time for yourself.
         <div class="card">
 
             <div class="icon">
-                ⚡
+                ☕
             </div>
 
-            <h3>Fast Performance</h3>
+            <h3>Freshly Brewed</h3>
 
             <p>
-                Dibangun dengan teknologi modern
-                untuk memberikan performa yang cepat
-                dan responsif.
+                Freshly brewed coffee made with carefully
+                selected beans to give you the perfect cup
+                every time.
             </p>
 
         </div>
@@ -80,14 +82,15 @@ or simply taking a little time for yourself.
         <div class="card">
 
             <div class="icon">
-                🔒
+                🥐
             </div>
 
-            <h3>Secure</h3>
+            <h3>Made With Love</h3>
 
             <p>
-                Sistem yang aman dengan struktur
-                aplikasi yang mudah dikembangkan.
+                Delicious bites and freshly made treats
+                prepared to perfectly accompany your
+                favorite coffee.
             </p>
 
         </div>
@@ -96,14 +99,15 @@ or simply taking a little time for yourself.
         <div class="card">
 
             <div class="icon">
-                🚀
+                ✦
             </div>
 
-            <h3>Easy to Scale</h3>
+            <h3>Cozy Moments</h3>
 
             <p>
-                Struktur fleksibel sehingga aplikasi
-                dapat terus berkembang.
+                A warm and cozy space to slow down,
+                catch up with friends, get some work done,
+                or simply enjoy your own time.
             </p>
 
         </div>
@@ -323,6 +327,148 @@ or simply taking a little time for yourself.
     background: #241b16;
 
     color: #f5ebdd;
+}
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    padding: 110px 8%;
+    background: #fffaf3;
+    color: #241b16;
+}
+
+
+.section-title {
+    max-width: 650px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #c6653e;
+}
+
+
+.section-title h2 {
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 20px;
+}
+
+
+.section-title p {
+    color: #6b5b50;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+.card {
+    padding: 35px;
+
+    background: #f5ebdd;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(36, 27, 22, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(36, 27, 22, 0.10);
+}
+
+
+.icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #c6653e;
+
+    color: white;
+
+    border-radius: 15px;
+
+    font-size: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+.card h3 {
+    font-size: 23px;
+
+    margin-bottom: 12px;
+
+    color: #241b16;
+}
+
+
+.card p {
+    color: #6b5b50;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        padding: 80px 6%;
+    }
+
 }
 
 </style>
