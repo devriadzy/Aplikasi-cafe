@@ -30,7 +30,7 @@ or simply taking a little time for yourself.
 
         <a href="{{ route('menu') }}" class="primary-btn">
           Explore Our Menu →
-</>
+
             </a>
 
             <a href="#" class="secondary-btn">
@@ -122,7 +122,8 @@ or simply taking a little time for yourself.
     /* HERO */
 
     .hero {
-        min-height: 100vh;
+    min-height: 100vh;
+
     display: flex;
     align-items: center;
 
@@ -131,9 +132,15 @@ or simply taking a little time for yourself.
     position: relative;
     overflow: hidden;
 
-    background: #080c1a;
-    }
-/* FOOD IMAGE */
+    background: #f5ebdd;
+
+    color: #241b16;
+}
+
+
+/* =========================
+   FOOD ART
+========================= */
 
 .hero::after {
     content: "";
@@ -143,183 +150,180 @@ or simply taking a little time for yourself.
     top: 0;
     right: 0;
 
-    width: 60%;
+    width: 65%;
     height: 100%;
 
     background-image:
+
         linear-gradient(
             to right,
-    #080c1a 0%,
-    rgba(8, 12, 26, 0.85) 15%,
-    rgba(8, 12, 26, 0.45) 40%,
-    rgba(8, 12, 26, 0.05) 75%,
-    rgba(8, 12, 26, 0) 100%
+
+            #f5ebdd 0%,
+
+            rgba(245, 235, 221, 0.98) 8%,
+
+            rgba(245, 235, 221, 0.85) 20%,
+
+            rgba(245, 235, 221, 0.45) 40%,
+
+            rgba(245, 235, 221, 0.08) 65%,
+
+            rgba(245, 235, 221, 0) 100%
         ),
+
         url('/images/ff8dda4566254608355e7c471ffcf095.jpg');
 
     background-size: cover;
+
     background-position: center;
 
     z-index: 0;
 }
 
-    .hero-content {
-        max-width: 700px;
+
+/* =========================
+   CONTENT
+========================= */
+
+.hero-content {
+    max-width: 700px;
 
     position: relative;
+
     z-index: 2;
-    }
-
-    .badge {
-        display: inline-block;
-
-        padding: 8px 15px;
-
-        background: rgba(108, 99, 255, 0.12);
-
-        border: 1px solid rgba(108, 99, 255, 0.3);
-
-        border-radius: 30px;
-
-        color: #9d98ff;
-
-        font-size: 14px;
-
-        margin-bottom: 25px;
-    }
-
-    .hero h1 {
-        font-size: clamp(45px, 6vw, 78px);
-        line-height: 1.05;
-        letter-spacing: -3px;
-        margin-bottom: 25px;
-    }
-
-    .hero h1 span {
-        background: linear-gradient(
-            90deg,
-            #7b73ff,
-            #a78bfa
-        );
-
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .hero p {
-        color: #a8aec4;
-        font-size: 18px;
-        line-height: 1.7;
-        max-width: 600px;
-        margin-bottom: 35px;
-    }
-
-    .hero-buttons {
-        display: flex;
-        gap: 15px;
-    }
+}
 
 
-    /* FEATURES */
+.badge {
+    display: inline-block;
 
-    .features {
-        padding: 100px 8%;
-        background: #0b0f20;
-    }
+    padding: 9px 16px;
 
-    .section-title {
-        text-align: center;
-        margin-bottom: 55px;
-    }
+    background: #241b16;
 
-    .section-title h2 {
-        font-size: 38px;
-        margin-bottom: 12px;
-    }
+    color: #f5ebdd;
 
-    .section-title p {
-        color: #8f95ac;
-    }
+    border-radius: 30px;
 
-    .feature-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-    }
+    font-size: 13px;
 
-    .card {
-        padding: 30px;
-        border-radius: 18px;
+    font-weight: 600;
 
-        background: #10152a;
+    letter-spacing: 0.5px;
 
-        border: 1px solid #1d2339;
-
-        transition: 0.3s;
-    }
-
-    .card:hover {
-        transform: translateY(-7px);
-        border-color: #5149d9;
-    }
-
-    .icon {
-        width: 50px;
-        height: 50px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background: rgba(108, 99, 255, 0.15);
-
-        border-radius: 12px;
-
-        font-size: 23px;
-
-        margin-bottom: 20px;
-    }
-
-    .card h3 {
-        margin-bottom: 12px;
-        font-size: 20px;
-    }
-
-    .card p {
-        color: #858ca4;
-        line-height: 1.6;
-    }
+    margin-bottom: 25px;
+}
 
 
-    /* MOBILE */
+.hero h1 {
+    font-size: clamp(50px, 6vw, 82px);
 
-    @media (max-width: 768px) {
+    line-height: 0.98;
 
-        .hero {
-            padding: 120px 6% 80px;
-        }
+    letter-spacing: -4px;
 
-        .hero h1 {
-            letter-spacing: -2px;
-        }
+    margin-bottom: 28px;
 
-        .hero-buttons {
-            flex-direction: column;
-        }
+    color: #241b16;
+}
 
-        .hero-buttons a {
-            text-align: center;
-        }
 
-        .features {
-            padding: 80px 6%;
-        }
+.hero h1 span {
 
-        .feature-grid {
-            grid-template-columns: 1fr;
-        }
+    color: #c6653e;
 
-    }
+    background: none;
+
+    -webkit-text-fill-color: initial;
+}
+
+
+.hero p {
+
+    color: #6b5b50;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 600px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.primary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 15px 24px;
+
+    background: #c6653e;
+
+    color: white;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+
+.primary-btn:hover {
+
+    background: #a94f30;
+
+    transform: translateY(-3px);
+}
+
+
+.secondary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 15px 24px;
+
+    background: transparent;
+
+    color: #241b16;
+
+    border: 1px solid #8d7766;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.secondary-btn:hover {
+
+    background: #241b16;
+
+    color: #f5ebdd;
+}
 
 </style>
 

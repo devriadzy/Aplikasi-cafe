@@ -1,98 +1,182 @@
 <nav class="navbar">
 
-    <div class="logo">
+    <a href="{{ route('home') }}" class="logo">
         MasterMind<span>.cafe</span>
+    </a>
+
+
+    <div class="nav-links">
+
+        <a href="{{ route('home') }}">
+            Home
+        </a>
+
+        <a href="{{ route('menu') }}">
+            Menu
+        </a>
+
+        <a href="{{ route('about') }}">
+            Our Story
+        </a>
+
+        <a href="#">
+            Contact
+        </a>
+
     </div>
 
-    <ul class="nav-links">
 
-        <li>
-            <a href="{{ url('/') }}">
-                Home
-            </a>
-        </li>
-
-        <li>
-            <a href="#">
-                Features
-            </a>
-        </li>
-
-        <li>
-            <a href="{{ url('/about') }}">
-                About
-            </a>
-        </li>
-
-    </ul>
-
-    <a href="#" class="nav-btn">
+    <a href="{{ route('menu') }}" class="order-btn">
         Order Now
     </a>
 
 </nav>
 
+
 <style>
+
     .navbar {
-        width: 100%;
-        padding: 22px 8%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
         position: absolute;
+
         top: 0;
         left: 0;
-        z-index: 10;
+
+        width: 100%;
+
+        padding: 22px 4%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        z-index: 100;
+
+        box-sizing: border-box;
     }
+
+
+    /* LOGO */
 
     .logo {
-        font-size: 24px;
+
+        color: #241b16;
+
+        font-size: 28px;
+
         font-weight: 800;
-        letter-spacing: -1px;
+
+        text-decoration: none;
+
+        letter-spacing: -1.5px;
     }
+
 
     .logo span {
-        color: #6c63ff;
+
+        color: #c6653e;
     }
+
+
+    /* NAV LINKS */
 
     .nav-links {
+
         display: flex;
-        gap: 35px;
-        list-style: none;
+
+        align-items: center;
+
+        gap: 38px;
     }
+
 
     .nav-links a {
-        color: #b8bdd3;
+
+        color: #4f4036;
+
+        text-decoration: none;
+
+        font-size: 15px;
+
+        font-weight: 500;
+
         transition: 0.3s;
     }
+
 
     .nav-links a:hover {
-        color: #ffffff;
+
+        color: #c6653e;
     }
 
-    .nav-btn {
-        background: #6c63ff;
-        color: white;
-        padding: 11px 22px;
-        border-radius: 10px;
-        font-weight: 600;
+
+    /* ORDER BUTTON */
+
+    .order-btn {
+
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        padding: 12px 22px;
+
+        background: #241b16;
+
+        color: #f5ebdd;
+
+        text-decoration: none;
+
+        border-radius: 8px;
+
+        font-size: 14px;
+
+        font-weight: 700;
+
         transition: 0.3s;
     }
 
-    .nav-btn:hover {
-        background: #8179ff;
+
+    .order-btn:hover {
+
+        background: #c6653e;
+
         transform: translateY(-2px);
     }
+
+
+    /* MOBILE */
 
     @media (max-width: 768px) {
 
         .navbar {
+
             padding: 20px 6%;
         }
 
+
+        .logo {
+
+            font-size: 23px;
+        }
+
+
         .nav-links {
+
             display: none;
         }
 
+
+        .order-btn {
+
+            padding: 10px 16px;
+
+            font-size: 13px;
+        }
+
     }
+
 </style>

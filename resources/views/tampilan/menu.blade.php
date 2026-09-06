@@ -45,7 +45,7 @@
                 <div class="menu-card">
 
                     <div class="menu-image">
-                        <img src="{{ asset('images/coffee.jpg') }}" alt="Cappuccino">
+                        <img src="{{ asset('images/kopi.png') }}" alt="Cappuccino">
                     </div>
 
                     <div class="menu-info">
